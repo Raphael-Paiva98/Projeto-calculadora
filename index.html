@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <p class="result">0</p>
+      <div class="buttons">
+        <button class="btn-clear" onclick="clearDisplay()">C</button>
+        <button class="btn-operator" onclick="setOperator('±')">±</button>
+        <button class="btn-operator-percent" onclick="setOperator('%')">
+          %
+        </button>
+        <button class="btn-operator-division" onclick="setOperator('÷')">
+          ÷
+        </button>
+
+        <button class="btn-number-seven" onclick="appendNumber(7)">7</button>
+        <button class="btn-number-eight" onclick="appendNumber(8)">8</button>
+        <button class="btn-number-nine" onclick="appendNumber(9)">9</button>
+        <button class="btn-operator-multiply" onclick="setOperator('x')">
+          x
+        </button>
+
+        <button class="btn-number-four" onclick="appendNumber(4)">4</button>
+        <button class="btn-number-five" onclick="appendNumber(5)">5</button>
+        <button class="btn-number-six" onclick="appendNumber(6)">6</button>
+        <button class="btn-operator-subtract" onclick="setOperator('-')">
+          -
+        </button>
+
+        <button class="btn-number-one" onclick="appendNumber(1)">1</button>
+        <button class="btn-number-two" onclick="appendNumber(2)">2</button>
+        <button class="btn-number-three" onclick="appendNumber(3)">3</button>
+        <button class="btn-operator-add" onclick="setOperator('+')">+</button>
+
+        <button class="btn-number-zero" onclick="appendNumber(0)">0</button>
+        <button class="btn-decimal" onclick="appendNumber('.')">.</button>
+        <button class="btn-equal" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

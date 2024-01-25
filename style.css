@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+    background-image: url(./assets/pexels-karolina-grabowska-5412429.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position-y: 50%;
+    background-color: #f7f7f7;
+}
+.calculator {
+    width: 300px;
+    background-color: #181818;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #00000040;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+    overflow: hidden;
+  }
+  
+
+.result{
+    color:#fff;
+    font-size: 50px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+.buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    
+    
+}
+
+.btn-clear {
+    background-color: red;
+    font-size: 30px;
+}
+
+.btn-operator {
+    background-color: #A9A9A9;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.btn-operator-add {
+    background-color: #0000CD;
+    font-weight: bold;
+    font-size: 30px;
+}
+.btn-operator-division{
+    background-color: #0000CD;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.btn-operator-multiply{
+    background-color: #0000CD;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.btn-decimal{
+    background-color: #808080;
+    font-size: 30px;
+}
+.btn-operator-subtract{
+    background-color: #0000CD;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.btn-operator-percent{
+    background-color: #A9A9A9;
+    font-weight: bold;
+    font-size: 30px;
+}
+.btn-number-seven {
+    background-color: #808080;
+    font-size: 30px;
+}
+.btn-number-eight{
+    background-color: #808080;
+    font-size: 30px;
+}
+.btn-number-nine{
+    background-color: #808080;
+    font-size: 30px;
+}
+.btn-number-four{
+    background-color: #808080;
+    font-size: 30px;
+}
+.btn-number-five{
+    background-color: #808080;
+    font-size: 30px;
+}
+.btn-number-six{
+    background-color: #808080;
+    font-size: 30px;
+}
+.btn-number-one{
+    background-color: #808080;
+    font-size: 30px;
+}
+
+.btn-number-two{
+    background-color: #808080;
+    font-size: 30px;
+}
+.btn-number-three{
+    background-color: #808080;
+    font-size: 30px;
+}
+.btn-number-zero {
+    grid-column: span 2;
+    background-color: #808080;
+    font-size: 30px;
+}
+
+.btn-equal{
+    font-size: 50px;
+    color: white;
+    background: green;
+}
+
+button:active {
+    opacity: 0.6;
+  }
